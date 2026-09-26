@@ -1,0 +1,397 @@
+:root,
+[data-theme="light"] {
+  --bg: #fbf6f0;
+  --surface: #ffffff;
+  --text: #1c1917;
+  --muted: #57534e;
+  --accent: #e85d04;
+  --on-accent: #fffaf5;
+  --line: #e7e5e4;
+  --shadow: 0 18px 40px rgba(68, 32, 8, 0.06);
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #121a2b;
+  --text: #e8eef9;
+  --muted: #94a3b8;
+  --accent: #60a5fa;
+  --on-accent: #0b1220;
+  --line: #1e293b;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse 80% 40% at 0% -10%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), "Source Sans 3", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), Fraunces, serif;
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+h1 {
+  margin: 0.2rem 0 0;
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
+  max-width: 12ch;
+}
+
+h2 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.1rem, 4vw, 3.3rem);
+  max-width: 16ch;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.wrap {
+  width: min(1120px, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(16px);
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 4.25rem;
+}
+
+.brand {
+  color: var(--text);
+  font-family: var(--font-display), Fraunces, serif;
+  font-weight: 560;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  gap: 0.35rem;
+  margin-left: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.site-nav a {
+  color: var(--muted);
+  padding: 0.4rem 0.7rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav a[aria-current="true"] {
+  color: var(--accent);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+.theme-toggle {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 4.5rem 0 3rem;
+}
+
+.kicker {
+  margin: 0 0 0.8rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.role-line {
+  margin-top: 0.8rem;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 650;
+}
+
+.specialties {
+  margin-top: 0.35rem;
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.lede {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1.75rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.proof {
+  padding: 0.5rem 0 1rem;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1.25rem 0 0.5rem;
+  border-block: 1px solid var(--line);
+}
+
+.figure {
+  font-family: var(--font-display), Fraunces, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.proof-grid p:last-child {
+  margin-top: 0.4rem;
+  color: var(--muted);
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.statement {
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+  font-size: 1.25rem;
+}
+
+.credentials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 22rem));
+  gap: 0.8rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credentials li,
+.card,
+.panel,
+.education,
+.stack-groups article {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.credentials li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1rem 1.1rem;
+}
+
+.credentials span {
+  color: var(--muted);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card:nth-child(-n + 2) {
+  grid-column: 1 / -1;
+}
+
+.card,
+.panel,
+.education {
+  padding: 1.35rem 1.4rem 1.45rem;
+}
+
+.card p + p,
+.role p + .chips,
+.card .chips,
+.role .chips {
+  margin-top: 0.85rem;
+}
+
+.dates,
+.card-title,
+.status {
+  color: var(--muted);
+}
+
+.card-title {
+  margin-top: 0.2rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.15rem 0.65rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.card a,
+.role a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.panel p {
+  max-width: 40rem;
+  font-size: 1.15rem;
+}
+
+.timeline {
+  display: grid;
+}
+
+.role {
+  display: grid;
+  grid-template-columns: minmax(12rem, 18rem) 1fr;
+  gap: 1.5rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.education {
+  margin-top: 1.5rem;
+}
+
+.education p {
+  margin-top: 0.35rem;
+}
+
+.stack-groups {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.stack-groups article {
+  padding: 1rem 1.15rem 1.15rem;
+}
+
+.stack-groups h3 {
+  font-family: var(--font-body), "Source Sans 3", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.contact {
+  padding-bottom: 5.5rem;
+}
+
+@media (max-width: 800px) {
+  .proof-grid,
+  .cards,
+  .credentials,
+  .role {
+    grid-template-columns: 1fr;
+  }
+
+  .card:nth-child(-n + 2) {
+    grid-column: auto;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .header-bar {
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 0.7rem 0;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+  }
+}

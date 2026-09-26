@@ -1,0 +1,97 @@
+Nikhil Narayana | AI Agentic Architect
+NIKHIL NARAYANA
+AI Agentic Architect | Engineering Leader | Software Architect
+Mysore / Bengaluru, India | Open to Global Remote Opportunities | +91 98809 91531 | niks.narayana@gmail.com |
+linkedin.com/in/nikhil-narayana-dev | clascout.in
+PROFESSIONAL SUMMARY
+AI Agentic Architect and Engineering Leader with 20+ years of experience architecting and shipping production-grade
+software. Specializes in multi-agent systems, LangGraph, LangChain, RAG, LLM decision logic, and high-performance
+state management. Proven track record of delivering 0-to-1 enterprise products, modernizing engineering stacks, leading
+distributed teams, and connecting business strategy with scalable AI orchestration and resilient software systems.
+TECHNICAL SKILLS
+AI & Agentic Systems: LangGraph, LangChain, RAG, OpenAI APIs, LLM decision logic, AI-assisted architecture and
+development, Cursor IDE, Claude Code
+Frontend: React, ReactJS, Next.js, TypeScript, Flutter, React Native, Expo
+Backend: Node.js, Java, Spring Boot
+Cloud & DevOps: GCP, AWS, Azure, Docker, Kubernetes, CI/CD, Cloud Run, Cloud SQL
+Data: PostgreSQL, MongoDB, MySQL, Kafka
+Security & Streaming: OAuth 2.0, OpenID Connect, HLS, encrypted content delivery
+Engineering Leadership: System and cloud architecture, engineering leadership, Agile/Lean delivery, 0-to-1 product
+development, roadmap and strategy, cross-functional team building, stakeholder communication, distributed team
+management, change and transformation management
+Collaboration & Delivery: GitHub, GitLab, JIRA, Confluence, ClickUp, Slack, Zoom, Microsoft Teams, Hubstaff,
+asynchronous documentation
+PROFESSIONAL EXPERIENCE
+Founder & Architect | Clascout, Independent SaaS Platform
+May 2026 – Present | 15 paying class owners acquired within first week of launch
+• Founded and built Clascout independently, a SaaS platform for class owners to manage fees, attendance, and schedules
+and for learners to track enrollment across multiple classes.
+• Designed the full product, cloud infrastructure, and go-to-market from the ground up as sole architect and primary
+developer.
+• Built self-sustaining infrastructure with near-zero ongoing maintenance and highly automated operations.
+• Used Cursor IDE and Claude Code with AI-assisted agentic workflows to accelerate full-stack development, achieving 4x
+faster feature delivery while maintaining code quality.
+Head of Software | Vidwath Innovative Solutions, Mysore
+Dec 2025 – May 2026 | Led team of 20 | LMS serving 50,000+ students | 5,000+ hours of content
+• Architected and shipped Vidwath 4.0 LMS from scratch as a cross-platform Windows, Web, and Android application from
+a single codebase in under 3 months, with no additional hires or paid tools.
+• Redesigned the offline content encryption pipeline and built automated single-script tooling to replace a manual, errorprone process and reduce piracy risk.
+• Established GitHub organization, version-control workflows, coding standards, and CI/CD from zero, improving team
+engineering practices and code quality.
+• Integrated AI tooling including RAG approaches, NotebookLM, and generative content via OpenMAIC; led feasibility
+research for offline, on-device AI models.
+• Pioneered AI-driven development workflows with Cursor and Claude Code; mentored engineers on AI-assisted coding,
+blocker resolution, and legacy modernization.
+• Ran monthly 1:1s and coached the team on soft skills, production management, collaboration, and technical problem
+solving.
+Technical Lead (Frontend) | Athos Commerce (formerly Klevu), Ahmedabad
+Jan 2022 – Dec 2025 | Led team of 10 | Platform serving 10,000+ merchants globally
+• Led migration of the merchant admin application from a legacy codebase to ReactJS microservices using the Strangler
+Pattern, delivering significant performance gains with zero downtime for live merchants.
+• Drove Jest adoption across the team, achieving 90% test coverage, reducing production bugs, and enforcing quality
+gates through SonarQube.
+• Built an OpenAI-powered synonym suggestion API to recover zero-result searches for a platform serving 10,000+
+merchants.
+Nikhil Narayana | AI Agentic Architect
+• Maintained an open-source frontend SDK on GitHub and mentored a team of 4 on engineering best practices, code
+reviews, and modern frontend techniques.
+• Built a complete hackathon MVP covering login, Stripe billing, and analytics in ReactJS in 3 days; the implementation
+became a reference architecture for new features.
+Architect & Lead | Bali.love, Remote Freelance Contract
+Dec 2024 – May 2025
+• Led migration from Bubble to React, Node.js, and PostgreSQL, including full data migration and schema redesign,
+deployed on GCP Cloud Run and Cloud SQL.
+Frontend App Developer | Essence News App, Remote Freelance Contract
+Dec 2024 – May 2025
+• Developed a news application using Expo and React Native, delivered the MVP in 30 days, and shipped to Android and
+iOS app stores.
+• Coordinated development with the project lead in the UK.
+Principal Engineer | Nineleaps Technologies, Bengaluru
+Jan 2021 – Jan 2022
+• Contributed to TESCO's Help App serving 400,000 employees using React, Node.js, and Kubernetes; resolved Docker
+deployment issues and made meaningful contributions within 15 days of joining.
+Principal Consultant | Qwinix Technologies, Mysore
+Jun 2018 – Jan 2021
+• Led an 18-member team on HPE's Qbert 2.0 analytics platform using Node.js, React, PostgreSQL, Kafka, Kubernetes,
+and Azure; selected as the sole India–Costa Rica liaison for onsite collaboration.
+• Led a 15-member team for CoolerScreens delivering Access Manager, Planogram App/Editor, Product Catalog, and
+pricing ingestion pipeline on Azure with OAuth 2.0 and OpenID Connect.
+• Secured 4 GCP certifications and 1 AWS certification while on the job.
+EARLIER CAREER
+Self-Employed | Agriculture & Entrepreneurship
+Feb 2010 – Jun 2018
+• Built and ran a dairy and agriculture operation covering 100 acres with 30+ employees and 1,000 L/day production;
+developed in-house software for payroll, dairy management, and attendance while maintaining hands-on technical skills.
+Senior Developer | MSCI Inc. (Morgan Stanley Capital International)
+Jul 2008 – Feb 2010
+Software Developer | i-flex Solutions (now Oracle Financial Services)
+2005 – 2008
+Software Developer | Dataflex Systems Pvt. Ltd., Mumbai
+Jul 2004 – Jan 2005
+EDUCATION
+B.E. Computer Science | TKIET, Shivaji University | 2003
+CERTIFICATIONS & COURSES
+• LangChain & LangGraph Foundations — LangChain Academy
+ADDITIONAL INFORMATION
+Languages: English, Hindi, Kannada
+Travel: US B1 Visa valid through 2030; available for periodic global travel for team retreats and onsite engagements. 
