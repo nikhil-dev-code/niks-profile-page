@@ -14,8 +14,12 @@ export type Role = {
 
 export type AgentDemo = {
   name: string;
-  summary: string;
+  domain: string;
+  problem: string;
+  approach: string;
+  production: string;
   stack: string[];
+  samplePrompts: string[];
   url?: string;
 };
 
@@ -26,7 +30,7 @@ export type StackGroup = {
 
 export const person = {
   name: "Nikhil Narayana",
-  title: "Full-Stack Engineering Lead",
+  title: "Engineering Lead · Agentic Systems",
   specialties: "Conversational AI · Generative AI · Production agent systems",
   supporting:
     "Fifteen years taking software from a blank repository to production, usually as the person accountable for the team. The last year of that work is conversational AI, generative features, and agent systems inside products that are already live.",
@@ -40,7 +44,7 @@ export const person = {
   emailHref: "mailto:niks.narayana@gmail.com",
   linkedinLabel: "LinkedIn",
   linkedinHref: "https://www.linkedin.com/in/nikhil-narayana-dev",
-  documentTitle: "Nikhil Narayana — Full-Stack Engineering Lead",
+  documentTitle: "Nikhil Narayana — Engineering Lead · Agentic Systems",
 };
 
 export const nav = [
@@ -208,7 +212,40 @@ export const roles: Role[] = [
   },
 ];
 
-export const agentDemos: AgentDemo[] = [];
+export const agentDemos: AgentDemo[] = [
+  {
+    name: "Institution Management Agent",
+    domain: "Institutions",
+    problem:
+      "Campus and multi-site teams answer enrollment, fee, roster, and policy questions by hopping across admin tools and tribal knowledge.",
+    approach:
+      "Tool-using agent over institution records and documents: multi-step admin workflows with retrieval for policies and structured tools for live data.",
+    production:
+      "Scoped tools, audited side effects, and human confirmation on writes.",
+    stack: ["LangGraph", "Tool calling", "RAG", "PostgreSQL", "OpenAI APIs"],
+    samplePrompts: [
+      "Summarize open fee balances for the science department this term.",
+      "Which campuses still need transfer approvals this week?",
+      "What does the refund policy say for mid-semester withdrawals?",
+    ],
+  },
+  {
+    name: "Class Management Agent",
+    domain: "Classes",
+    problem:
+      "Teachers and class owners lose time on attendance, homework follow-ups, schedule changes, and parent updates that live in separate apps.",
+    approach:
+      "Agent oriented around class operations: tools for roster and sessions, retrieval for class materials, and guided multi-step tasks for common teaching workflows.",
+    production:
+      "Read-first defaults, explicit confirmations for messages and schedule changes, eval prompts for common failure cases.",
+    stack: ["LangGraph", "Tool calling", "RAG", "Node.js", "OpenAI APIs"],
+    samplePrompts: [
+      "Who was absent more than twice this week in Grade 8A?",
+      "Draft a parent update for tomorrow's schedule change.",
+      "List homework still outstanding for the last two sessions.",
+    ],
+  },
+];
 
 export const stack: StackGroup[] = [
   {
@@ -284,4 +321,4 @@ export const education = {
 };
 
 export const agentEmptyCopy =
-  "Agent-interface demos are in progress. Each finished demo will show what the agent does, the stack, and a link.";
+  "Agent system case studies are in progress. Each finished entry will show the problem, approach, production notes, stack, and a sandbox link when available.";

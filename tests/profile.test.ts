@@ -12,14 +12,14 @@ import {
 
 test("person exposes recruiter contact and title", () => {
   assert.equal(person.name, "Nikhil Narayana");
-  assert.equal(person.title, "Full-Stack Engineering Lead");
+  assert.equal(person.title, "Engineering Lead · Agentic Systems");
   assert.equal(person.phoneDisplay, "+91 98809 91531");
   assert.equal(person.phoneHref, "tel:+919880991531");
   assert.equal(person.email, "niks.narayana@gmail.com");
   assert.match(person.linkedinHref, /linkedin\.com\/in\/nikhil-narayana-dev/);
   assert.equal(
     person.documentTitle,
-    "Nikhil Narayana — Full-Stack Engineering Lead",
+    "Nikhil Narayana — Engineering Lead · Agentic Systems",
   );
 });
 
@@ -53,13 +53,33 @@ test("five featured roles lead, and older employers stay in the career", () => {
   );
 });
 
-test("agent demos launch empty and credentials stay unqualified", () => {
-  assert.deepEqual(agentDemos, []);
+test("agent case studies and credentials stay unqualified", () => {
+  assert.equal(agentDemos.length, 2);
+  assert.deepEqual(
+    agentDemos.map((d) => d.name),
+    ["Institution Management Agent", "Class Management Agent"],
+  );
+  for (const demo of agentDemos) {
+    assert.ok(demo.domain.length > 0);
+    assert.ok(demo.problem.length > 0);
+    assert.ok(demo.approach.length > 0);
+    assert.ok(demo.production.length > 0);
+    assert.ok(demo.stack.length > 0);
+    assert.ok(demo.samplePrompts.length >= 2);
+    assert.equal(demo.url, undefined);
+  }
   assert.match(appliedAi.example, /pgvector/);
   assert.equal(appliedAi.credentials[0]?.status, "Coursework complete");
   assert.equal(appliedAi.credentials[1]?.status, "Exam in progress");
   assert.equal(education.year, "2003");
-  const blob = JSON.stringify({ person, appliedAi, roles, stack, education });
+  const blob = JSON.stringify({
+    person,
+    appliedAi,
+    roles,
+    agentDemos,
+    stack,
+    education,
+  });
   assert.doesNotMatch(blob, /fine-tun/i);
   assert.doesNotMatch(blob, /pretrain/i);
   for (const group of stack) {

@@ -4,10 +4,10 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import Page from "../app/page.tsx";
 
-test("page markup carries contact, live products, and the empty agent panel", () => {
+test("page markup carries contact, live products, and agent case studies", () => {
   const html = renderToStaticMarkup(createElement(Page));
 
-  assert.match(html, /Full-Stack Engineering Lead/);
+  assert.match(html, /Engineering Lead · Agentic Systems/);
   assert.match(html, /Conversational AI/);
   assert.match(html, /tel:\+919880991531/);
   assert.match(html, /mailto:niks\.narayana@gmail\.com/);
@@ -17,7 +17,12 @@ test("page markup carries contact, live products, and the empty agent panel", ()
   assert.match(html, /com\.essencenews\.essenceapp/);
   assert.match(html, /Nineleaps Technologies/);
   assert.match(html, /Qwinix Technologies/);
-  assert.match(html, /Agent-interface demos are in progress/);
+  assert.match(html, /Institution Management Agent/);
+  assert.match(html, /Class Management Agent/);
+  assert.match(html, /Sandbox in progress/);
+  assert.match(html, /Agent systems/);
+  assert.doesNotMatch(html, /Agent-interface demos are in progress/);
+  assert.doesNotMatch(html, /Interfaces for agents/);
   assert.match(html, /pgvector/);
   assert.match(html, /LangChain Academy/);
   assert.match(html, /B\.E\. Computer Science/);
