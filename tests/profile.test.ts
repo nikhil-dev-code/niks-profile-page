@@ -69,8 +69,26 @@ test("agent case studies and credentials stay unqualified", () => {
     assert.equal(demo.url, undefined);
   }
   assert.match(appliedAi.example, /pgvector/);
-  assert.equal(appliedAi.credentials[0]?.status, "Coursework complete");
-  assert.equal(appliedAi.credentials[1]?.status, "Exam in progress");
+  assert.equal(appliedAi.credentials.length, 9);
+  assert.deepEqual(
+    appliedAi.credentials.map((c) => c.status),
+    [
+      "Sep 2026",
+      "Sep 2026",
+      "Sep 2026",
+      "Sep 2026",
+      "Sep 2026",
+      "Aug 2026",
+      "Aug 2026",
+      "Aug 2026",
+      "Exam in progress",
+    ],
+  );
+  for (const course of appliedAi.credentials.slice(0, 8)) {
+    assert.ok(course.href);
+  }
+  assert.equal(appliedAi.credentials[8]?.href, undefined);
+  assert.equal(appliedAi.credentials[8]?.label, "LangChain Certified Agent Engineer");
   assert.equal(education.year, "2003");
   const blob = JSON.stringify({
     person,

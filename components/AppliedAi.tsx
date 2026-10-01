@@ -13,7 +13,19 @@ export function AppliedAi() {
         <ul className="credentials">
           {appliedAi.credentials.map((item) => (
             <li key={item.label}>
-              <span>{item.label}</span>
+              <span>
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  item.label
+                )}
+              </span>
               <strong>{item.status}</strong>
             </li>
           ))}

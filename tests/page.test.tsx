@@ -24,7 +24,9 @@ test("page markup carries contact, live products, and agent case studies", () =>
   assert.doesNotMatch(html, /Agent-interface demos are in progress/);
   assert.doesNotMatch(html, /Interfaces for agents/);
   assert.match(html, /pgvector/);
-  assert.match(html, /LangChain Academy/);
+  assert.match(html, /Introduction to LangGraph/);
+  assert.match(html, /LangChain Certified Agent Engineer/);
+  assert.match(html, /#cred-langgraph-foundation/);
   assert.match(html, /B\.E\. Computer Science/);
   assert.doesNotMatch(html, /fine-tun/i);
   assert.equal(html.includes('href=""'), false);

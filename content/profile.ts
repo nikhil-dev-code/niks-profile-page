@@ -68,8 +68,50 @@ export const appliedAi = {
   example:
     "At Vidwath, subject ebooks were split into chapter chunks, stored in PostgreSQL with pgvector, retrieved, and passed to an LLM to produce question papers, homework, and summaries.",
   credentials: [
-    { label: "LangChain Academy", status: "Coursework complete" },
-    { label: "LangChain Certified Agent Engineer", status: "Exam in progress" },
+    {
+      label: "Foundation: Introduction to LangGraph - Python",
+      status: "Sep 2026",
+      href: "#cred-langgraph-foundation",
+    },
+    {
+      label: "Foundation: Monitoring Production Agents",
+      status: "Sep 2026",
+      href: "#cred-monitoring-agents",
+    },
+    {
+      label: "Foundation: Introduction to Deep Agents",
+      status: "Sep 2026",
+      href: "#cred-deep-agents",
+    },
+    {
+      label: "Foundation: Introduction to LangSmith Deployment",
+      status: "Sep 2026",
+      href: "#cred-langsmith-deployment",
+    },
+    {
+      label: "Foundation: Building Reliable Agent",
+      status: "Sep 2026",
+      href: "#cred-reliable-agents",
+    },
+    {
+      label: "Foundation: Introduction to LangChain - Python",
+      status: "Aug 2026",
+      href: "#cred-langchain-foundation",
+    },
+    {
+      label: "Quickstart: LangGraph Essentials - Python",
+      status: "Aug 2026",
+      href: "#cred-langgraph-essentials",
+    },
+    {
+      label: "Quickstart: LangChain Essentials - Python",
+      status: "Aug 2026",
+      href: "#cred-langchain-essentials",
+    },
+    {
+      label: "LangChain Certified Agent Engineer",
+      status: "Exam in progress",
+    },
   ],
 };
 
