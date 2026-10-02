@@ -68,45 +68,46 @@ export const appliedAi = {
   example:
     "At Vidwath, subject ebooks were split into chapter chunks, stored in PostgreSQL with pgvector, retrieved, and passed to an LLM to produce question papers, homework, and summaries.",
   credentials: [
-    {
-      label: "Foundation: Introduction to LangGraph - Python",
-      status: "Sep 2026",
-      href: "#cred-langgraph-foundation",
-    },
-    {
-      label: "Foundation: Monitoring Production Agents",
-      status: "Sep 2026",
-      href: "#cred-monitoring-agents",
-    },
-    {
-      label: "Foundation: Introduction to Deep Agents",
-      status: "Sep 2026",
-      href: "#cred-deep-agents",
-    },
-    {
-      label: "Foundation: Introduction to LangSmith Deployment",
-      status: "Sep 2026",
-      href: "#cred-langsmith-deployment",
-    },
-    {
-      label: "Foundation: Building Reliable Agent",
-      status: "Sep 2026",
-      href: "#cred-reliable-agents",
-    },
-    {
-      label: "Foundation: Introduction to LangChain - Python",
-      status: "Aug 2026",
-      href: "#cred-langchain-foundation",
-    },
+    ,
     {
       label: "Quickstart: LangGraph Essentials - Python",
       status: "Aug 2026",
-      href: "#cred-langgraph-essentials",
+      href: "https://academy.langchain.com/certificates/xwznmqibjg",
     },
     {
       label: "Quickstart: LangChain Essentials - Python",
       status: "Aug 2026",
-      href: "#cred-langchain-essentials",
+      href: "https://academy.langchain.com/certificates/brvmzxyvuw",
+    },
+    {
+      label: "Foundation: Introduction to LangChain - Python",
+      status: "Aug 2026",
+      href: "https://academy.langchain.com/certificates/rm2vdvnnz0",
+    },
+    {
+      label: "Foundation: Introduction to LangGraph - Python",
+      status: "Sep 2026",
+      href: "https://academy.langchain.com/certificates/brvmzxyvuw",
+    },
+    {
+      label: "Foundation: Monitoring Production Agents",
+      status: "Sep 2026",
+      href: "https://academy.langchain.com/certificates/wyofnogn9d",
+    },
+    {
+      label: "Foundation: Introduction to Deep Agents",
+      status: "Sep 2026",
+      href: "https://academy.langchain.com/certificates/veja5rwll6",
+    },
+    {
+      label: "Foundation: Introduction to LangSmith Deployment",
+      status: "Sep 2026",
+      href: "https://academy.langchain.com/certificates/tsksjmexm3",
+    },
+    {
+      label: "Foundation: Building Reliable Agent",
+      status: "Sep 2026",
+      href: "https://academy.langchain.com/certificates/rm2vdvnnz0",
     },
     {
       label: "LangChain Certified Agent Engineer",
