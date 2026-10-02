@@ -68,22 +68,6 @@ export const appliedAi = {
   example:
     "At Vidwath, subject ebooks were split into chapter chunks, stored in PostgreSQL with pgvector, retrieved, and passed to an LLM to produce question papers, homework, and summaries.",
   credentials: [
-    ,
-    {
-      label: "Quickstart: LangGraph Essentials - Python",
-      status: "Aug 2026",
-      href: "https://academy.langchain.com/certificates/xwznmqibjg",
-    },
-    {
-      label: "Quickstart: LangChain Essentials - Python",
-      status: "Aug 2026",
-      href: "https://academy.langchain.com/certificates/brvmzxyvuw",
-    },
-    {
-      label: "Foundation: Introduction to LangChain - Python",
-      status: "Aug 2026",
-      href: "https://academy.langchain.com/certificates/rm2vdvnnz0",
-    },
     {
       label: "Foundation: Introduction to LangGraph - Python",
       status: "Sep 2026",
@@ -108,6 +92,21 @@ export const appliedAi = {
       label: "Foundation: Building Reliable Agent",
       status: "Sep 2026",
       href: "https://academy.langchain.com/certificates/rm2vdvnnz0",
+    },
+    {
+      label: "Foundation: Introduction to LangChain - Python",
+      status: "Aug 2026",
+      href: "https://academy.langchain.com/certificates/rm2vdvnnz0",
+    },
+    {
+      label: "Quickstart: LangGraph Essentials - Python",
+      status: "Aug 2026",
+      href: "https://academy.langchain.com/certificates/xwznmqibjg",
+    },
+    {
+      label: "Quickstart: LangChain Essentials - Python",
+      status: "Aug 2026",
+      href: "https://academy.langchain.com/certificates/brvmzxyvuw",
     },
     {
       label: "LangChain Certified Agent Engineer",
