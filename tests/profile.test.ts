@@ -25,8 +25,13 @@ test("person exposes recruiter contact and title", () => {
 
 test("proof figures match the spec", () => {
   assert.deepEqual(
-    proof.map((item) => item.figure),
-    ["15+", "20", "50,000+", "400,000"],
+    proof.map((item) => [item.figure, item.label]),
+    [
+      ["15+", "Years shipping software"],
+      ["15+", "Projects completed till date"],
+      ["7", "0-1 projects"],
+      ["50+", "Team mentored"],
+    ],
   );
 });
 

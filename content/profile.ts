@@ -58,9 +58,9 @@ export const nav = [
 
 export const proof = [
   { figure: "15+", label: "Years shipping software" },
-  { figure: "20", label: "Largest team led" },
-  { figure: "50,000+", label: "Students on Vidwath" },
-  { figure: "400,000", label: "Employees on the TESCO Help App" },
+  { figure: "15+", label: "Projects completed till date" },
+  { figure: "7+", label: "0-1 projects" },
+  { figure: "50+", label: "Team mentored" },
 ];
 
 export const appliedAi = {
