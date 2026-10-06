@@ -313,7 +313,7 @@ export const stack: StackGroup[] = [
   },
   {
     label: "Backend",
-    items: ["Node.js", "Java", "Spring Boot"],
+    items: ["Node.js", "Java", "Spring Boot", "Python"],
   },
   {
     label: "Cloud",
