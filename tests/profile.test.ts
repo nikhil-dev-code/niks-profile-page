@@ -29,7 +29,7 @@ test("proof figures match the spec", () => {
     [
       ["15+", "Years shipping software"],
       ["15+", "Projects completed till date"],
-      ["7", "0-1 projects"],
+      ["7+", "0-1 projects"],
       ["50+", "Team mentored"],
     ],
   );
